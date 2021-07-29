@@ -1,0 +1,29 @@
+1. Convert string into a char array.
+2. Convert char array into a list of surfaces with characters on them.
+3. Blit the surfaces accordingly.
+
+for i in range(0, len(self.surface_array)):       
+            if i < 38:
+                if self.text_counter > 1:
+                    self.window.blit(self.surface_array[i], (540 + i * self.surface_array[0].get_width(), 610))
+                    self.text_counter = 0
+            elif 38 <= i < 76:
+                if self.text_counter > 1:
+                    self.window.blit(self.surface_array[i], (540 + i * self.surface_array[0].get_width() - 722, 650))
+                    self.text_counter = 0
+            elif 76 <= i < 114:
+                if self.text_counter > 1:
+                    self.window.blit(self.surface_array[i], (540 + i * self.surface_array[0].get_width() - 722 * 2, 690))
+                    self.text_counter = 0
+            elif 114 <= i < 152:
+                if self.text_counter > 1:
+                    self.window.blit(self.surface_array[i], (540 + i * self.surface_array[0].get_width() - 722 * 3, 730))
+                    self.text_counter = 0
+        
+        #self.window.blit(surface_array[0], (540, 610))
+        #self.window.blit(surface_array[1], (540 + 1 * surface_array[1].get_width(), 610))
+        #self.window.blit(surface_array[2], (540 + 2 * surface_array[1].get_width(), 610))
+        #self.window.blit(surface_array[3], (540 + 3 * surface_array[1].get_width(), 610))
+        #self.window.blit(surface_array[4], (540 + 4 * surface_array[1].get_width(), 610))
+        #self.window.blit(surface_array[5], (540 + 5 * surface_array[1].get_width(), 610))
+        #self.window.blit(surface_array[6], (540 + 6 * surface_array[1].get_width(), 610))

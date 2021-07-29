@@ -1,0 +1,16 @@
+Ideas for Later:
+  [x] Menu with options for resizing a window? @low
+  [x] Make the scene manger its own file. @high 
+  [] Restructure project, (make scene manager its own file and the base class its own file, module?)
+
+Features I Want in the Framework:
+  Feature List:
+    [x] Scene transitions. @critical
+    [x] Player movement system. @critical
+    [x] Delta-time (frame-rate independent). @critical
+    [x] A Menu with a Settings screen where you can adjust various parameters (such as resolution). @low
+    [] Player Animation. @high 
+    [] Sprite sheets.
+    [] Optional: Basic physics system; detecting collisions (such as for a platformer, this could be a seperate project) @low
+    [] Optional: Loading levels with JSON. @low
+    [] Optional: Creating a level editor. @low

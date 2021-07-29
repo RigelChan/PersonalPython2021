@@ -1,0 +1,31 @@
+Add two UI components, a healthbar and inventory. Use some debug objects to implement these systems
+and use these UI components to test solutions to the resolution problem.
+
+== Solutions to the Resolution Problem ==
++ Fuck it; go with the Undertale approach, and just have the game stretch to fill the viewport.
++ A dynamic solution where UI is placed relative to the size of the display, to create perfect scaling.
++ Compromise, create a few preloaded resolutions such as 1080p, 1440p and 2160p.
+
+==== Loading pickups from JSON ====
+
+collectible_dict = {} # Live data accessed in the game.
+iter = 0
+
+for collectible in collectibles:
+    name = 'obj_{}'.format(iter)
+    collectible_dict.update({name: [type, x, y]})
+    iter += 1
+
+-> Everything else works basically the same way, just loop
+through the live dictionary to draw & check for collisions.
+
+==== Saving pickups to JSON ====
+
+collectible_list = []
+
+for i in collectible_dict.keys():
+    save_list.append(collectible_dict[i])
+
+self.save.data["collectibles"] = collectible_list
+
+
